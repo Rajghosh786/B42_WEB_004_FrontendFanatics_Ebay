@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Mobile Section Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+ 
+    <header>
+        <nav class="navbar-b">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay Logo" class="logo">
+            <div class="category-dropdown">
+                <p class="category-btn">Shop by Category <i class="fa-solid fa-angle-down"></i> </p>
+                <div class="dropdown-content">
+                    <div class="column">
+                        <h4>Motors</h4>
+                        <p>Parts & Accessories</p>
+                        <p>Cars & Trucks</p>
+                        <p>Motorcycles</p>
+                        <p>Other Vehicles</p>
+                    </div>
+                    <div class="column">
+                        <h4>Electronics</h4>
+                        <p>Computers, Tablets & Network Hardware</p>
+                        <p>Cell Phones, Smart Watches & Accessories</p>
+                        <p>Video Games & Consoles</p>
+                        <p>Cameras & Photo</p>
+                    </div>
+                    <div class="column">
+                        <h4>Collectibles & Art</h4>
+                        <p>Trading Cards</p>
+                        <p>Collectibles</p>
+                        <p>Coins & Paper Money</p>
+                        <p>Sports Memorabilia</p>
+                    </div>
+                    <div class="column">
+                        <h4>Home & Garden</h4>
+                        <p>Yard, Garden & Outdoor Living Items</p>
+                        <p>Tools & Workshop Equipment</p>
+                        <p>Home Improvement</p>
+                        <p>Kitchen, Dining & Bar Supplies</p>
+                    </div>
+                </div>
+            </div>
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search for anything" class="search-input">
+                <select class="category-dropdown">
+                    <option>All Categories</option>
+                    <option>Electronics</option>
+                    <option>Fashion</option>
+                    <option>Home & Garden</option>
+                    <option>Jewellery</option>
+                    <option>Men's Wear</option>
+                    <option>Women's Wear</option>
+                </select>
+                
+            </div>
+            <button class="search-button">Search</button>
+            <a href="#" class="advanced-search">Advanced</a>
+        </nav> <hr>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Categories -->
+            <div class="filter-category">
+              <h4>Categories &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-minus"></i></h4> <br>
+                <p>All</p><br>
+                <p>Cell Phones & Accessories</p><br>
+                <p>&nbsp;&nbsp;&nbsp;Cell Phone Accessories</p><br>
+              <h4>&nbsp;&nbsp;&nbsp;Cell Phones & Smartphones</h4> <br>
+                <p>&nbsp;&nbsp;&nbsp;Cell Phone &  Parts</p><br>
+                <p>&nbsp;&nbsp;&nbsp;Vintage Cell Phones</p><br>
+                <p>&nbsp;&nbsp;&nbsp;More <i class="fa-solid fa-plus"></i></p><br>
+                <p>Clothing, Shoes & Accessories</p><br>
+                <p>Books & Magazines</p><br>
+                <p>Business & Industrial</p><br>
+                <p>Consumer Electronics</p><br>
+                <p>Sporting Goods</p><br>
+                <p>Show More <i class="fa-solid fa-plus"></i></p><br>
+            </div>
+
+            <div class="filter-brand">
+            <h4>Brand</h4><br>
+                <select name="laptop" id="laptop-brand">
+                    <option value="">--Please choose a Brand--</option>
+                    <option value="Acer">Apple</option>
+                    <option value="Lenovo">Samsung</option>
+                    <option value="Apple">Poco</option>
+                    <option value="MSI">Lenove</option>
+                    <option value="ASUS">Xiaomi</option>
+                    <option value="HP">Google</option>
+                </select>
+            </div>
+            <br>
+            
+            <!-- Capacity -->
+            <div class="Ram-category">
+                <h4>Storage Capacity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-minus"></i></h4> <br>
+                <input type="checkbox" id="ram" />
+                <label>16GB</label> <p>(13,153)</p><br><br>
+                <input type="checkbox" id="ram" />
+                <label>8GB</label> <p>(12,068)</p><br><br>
+                <input type="checkbox" id="ram" />
+                <label>1TB</label> <p>(1,337)</p><br><br>
+                <input type="checkbox" id="ram" />
+                <label>32GB</label> <p>(4,411)</p><br><br>
+                <input type="checkbox" id="ram" />
+                <label>256GB</label> <p>(7,252)</p><br><br>
+                <input type="checkbox" id="ram" />
+                <label>512GB</label> <p>(2,777)</p><br><br>
+                <input type="checkbox" id="ram" />
+                <label>128GB</label> <p>(25,456)</p><br><br> 
+            </div>
+        <div class="filter-category">
+            <p>see all</p> <br>
+        </div>
+
+        <!-- Ram  -->
+        <div class="Ram-category">
+            <h4>Ram Size &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-minus"></i></h4> <br>
+            <input type="checkbox" id="ram" />
+            <label>16GB</label> <p>(13,153)</p><br><br>
+            <input type="checkbox" id="ram" />
+            <label>8GB</label> <p>(12,068)</p><br><br>
+            <input type="checkbox" id="ram" />
+            <label>4GB</label> <p>(25,456)</p><br><br>
+            <input type="checkbox" id="ram" />
+            <label>32GB</label> <p>(4,411)</p><br><br>
+            <input type="checkbox" id="ram" />
+            <label>256GB</label> <p>(7,252)</p><br><br>
+            <input type="checkbox" id="ram" />
+            <label>512GB</label> <p>(2,777)</p><br><br>
+            <input type="checkbox" id="ram" />
+            <label>12GB</label> <p>(1,322)</p><br><br> 
+        </div>
+    <div class="filter-category">
+        <p>see all</p> <br>
+    </div>
+
+        <!-- Color -->
+        <div class="Ram-category">
+            <h4>Color &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-minus"></i></h4> <br>
+            <input type="checkbox" id="ram" />
+            <label>Black</label> <p>(18,755)</p><br><br>
+            <input type="checkbox" id="ram" />
+            <label>Blue</label> <p>(1,848)</p><br><br>
+            <input type="checkbox" id="ram" />
+            <label>Grey</label> <p>(5,627)</p><br><br>
+            <input type="checkbox" id="ram" />
+            <label>White</label> <p>(19,174)</p><br><br>
+            <input type="checkbox" id="ram" />
+            <label>Gold</label> <p>(18,260)</p><br><br>
+            <input type="checkbox" id="ram" />
+            <label>Rose Gold</label> <p>(4,980)</p><br><br>
+            <input type="checkbox" id="ram" />
+            <label>Green</label> <p>(55)</p><br><br> 
+        </div>
+
+            <!-- Price -->
+             
+            <div class="Ram-category">
+                <h4>Price &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-minus"></i></h4> <br>
+                <input type="checkbox" id="ram" />
+                <label>Under $85.00</label><br><br>
+                <input type="checkbox" id="ram" />
+                <label>$85.00 to $190.00</label><br><br>
+                <input type="checkbox" id="ram" />
+                <label>Over $190.00</label><br><br>                
+            </div>
+
+            <!-- Customer Ratings -->
+            <div class="filter-ratings">
+                <h4>Customer Ratings</h4><br>
+                <label><input type="checkbox"> 4★ & above</label><br><br>
+                <label><input type="checkbox"> 3★ & above</label>
+            </div>
+
+            <br>
+
+            <!-- Discount -->
+            <div class="filter-discount">
+                <h4>Discount</h4><br>
+                <label><input type="checkbox"> 10% or more</label><br><br>
+                <label><input type="checkbox"> 20% or more</label>
+            </div>
+
+            <br>
+
+            <!-- Size -->
+            <div class="filter-size">
+                <h4>Size</h4><br>
+                <label><input type="checkbox"> 14"</label>
+                <label><input type="checkbox"> 15"</label>
+                <label><input type="checkbox"> 16"</label>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/b/o/e/-original-imagkgrxzahq3egj.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Infinix </h4>
+                <p class="description"> Infinix HOT 20 Play (Luna Blue, 64/4 GB)</p>
+                <p class="price">₹8199 <span class="original-price">₹11999</span> <span class="discount">31% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes"> 4.4 <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-m2-mzb9921in.jpg" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>POCO</h4>
+                <p class="description">POCO M2 (Blue, 64/4 GB) </p>
+                <p class="price">₹7499 <span class="original-price">₹11999</span> <span class="discount">37% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.3 <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/i/4/d/e8-e8-cellecor-original-imaggsrcyhnhj6tv.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Cellecor</h4>
+                <p class="description">Cellecor E8 Plus</p>
+                <p class="price">₹1469 <span class="original-price">₹1569</span> <span class="discount">6% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">3.6 <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/s/b/e/-original-imagkgrxdzzjuguw.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Infinix</h4>
+                <p class="description">Infinix HOT 20 Play (Aurora Green, 64 GB)</p>
+                <p class="price">₹8199 <span class="original-price">₹11999</span> <span class="discount">31% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.4 <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/p/f/u/-original-imagkgrxdsqpdznh.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Infinix</h4>
+                <p class="description">Infinix HOT 20 Play (Racing Black, 64 GB)</p>
+                <p class="price">₹8199 <span class="original-price">₹11999</span> <span class="discount">31% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.4 <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/g/p/x/-original-imagk4nz54s7a7rf.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>REDMI</h4>
+                <p class="description">REDMI 10 (Caribbean Green, 64 GB)</p>
+                <p class="price">₹9299 <span class="original-price">₹14999</span> <span class="discount">38% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4  <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/h/r/b/-original-imagh29eqd3zrvaf.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>MOTOROLA</h4>
+                <p class="description">MOTOROLA G62 5G (Midnight Gray, 128 GB)</p>
+                <p class="price">₹15999 <span class="original-price">₹24999</span> <span class="discount">36% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes"> 4.1 <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/k/y/d/iphone-11-256-u-mwm82hn-a-apple-0-original-imafkg25mhaztxns.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>APPLE</h4>
+                <p class="description">APPLE iPhone 11 (White, 128 GB)</p>
+                <p class="price">₹46999 <span class="original-price">₹48999</span> <span class="discount">4% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.7 <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/l2p23rk0/mobile/s/4/3/-original-imagdznhcbdfwfud.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Vivo</h4>
+                <p class="description">Vivo T1 44W (Starry Sky, 128 GB)</p>
+                <p class="price">₹14999 <span class="original-price">₹19999</span> <span class="discount">25% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">3.9 <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/9/q/j/-original-imagk4nzwhudqhcz.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>REDMI</h4>
+                <p class="description">REDMI 10 (Midnight Black, 64 GB)</p>
+                <p class="price">₹9299 <span class="original-price">₹14999</span> <span class="discount">38% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.1 <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/l2p23rk0/mobile/x/b/y/-original-imagdznhnzmzfbwx.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>Vivo</h4>
+                <p class="description">Vivo T1 44W (Midnight Galaxy, 128 GB)</p>
+                <p class="price">₹15999 <span class="original-price">₹20990</span> <span class="discount">23% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.1 <i class="fa-solid fa-star"></i> </p> 
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/t/6/g/-original-imagh29eknx3cavh.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>MOTOROLA</h4>
+                <p class="description">MOTOROLA G62 5G (Frosted Blue, 128 GB)</p>
+                <p class="price">₹15999 <span class="original-price">₹24999</span> <span class="discount">36% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.7 <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/0/8/4/-original-imagfhu75eupxyft.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>SAMSUNG</h4>
+                <p class="description">SAMSUNG Galaxy F13 (Waterfall Blue, 64 GB)</p>
+                <p class="price">₹11099 <span class="original-price">₹14999</span> <span class="discount">26% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.2 <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/l29c9e80/mobile/l/g/m/-original-imagdnefhnhztahe.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>MOTOROLA</h4>
+                <p class="description">MOTOROLA g52 (Charcoal Grey, 128 GB)</p>
+                <p class="price">₹12999 <span class="original-price">₹19999</span> <span class="discount">35% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.7 <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-m2-mzb9921in.jpg" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>POCO</h4>
+                <p class="description">POCO M2</p>
+                <p class="price">₹11999 <span class="original-price">₹17999</span> <span class="discount">33% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">4.2 <i class="fa-solid fa-star"></i></p>
+            </div>
+
+            <div class="product-card">
+                <img src="https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/t/6/g/-original-imagh29eknx3cavh.jpeg?q=70" alt="Product">
+                <p class="sponsored">Sponsored</p>
+                <h4>MOTOROLA</h4>
+                <p class="description">MOTOROLA G62 5G (Frosted Blue, 128 GB)</p>
+                <p class="price">₹14999 <span class="original-price">₹21999</span> <span class="discount">31% off</span></p>
+                <p class="badge">Hot Deal</p>
+                <p class="sizes">3  <i class="fa-solid fa-star"></i></p>
+            </div>
+
+        </section>
+    </div>
+    <div class="pagination">
+        <span>Page 1 of 617</span>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <a href="#">Next</a>
+      </div>
+    
+      <div class="feedback-box">
+        <p>Did you find what you were looking for?</p>
+        <button onclick="alert('Thank you for your feedback!')">Yes</button>
+        <button onclick="alert('Sorry to hear that. We’ll improve!')">No</button>
+      </div>
+    
+</body>
+</html>
