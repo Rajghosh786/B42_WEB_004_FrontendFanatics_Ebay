@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/ebayDailyDeals.css">
+
 </head>
 <body>
     <header>
@@ -12,11 +13,120 @@
     </header>
     <div id="deals">
      <h2 style="grid-row:1;">Deals</h2>
-    <a style="grid-column: 5;" href="Feature">Featured</a>
-    <a style="grid-column: 6;" href="Tech">Tech</a>  
-    <a style="grid-column: 7;" href="Fashion">Fashion</a>
-    <a style="grid-column: 8;" href="Home">Home</a>
-    <a style="grid-column: 9;" href="More">More</a>
+
+     <div style="grid-column: 6;" >
+     <button class="dropbtn" onclick="toggleDropdown()">Featured</button>
+     <div class="dropdown-content" id="dropdownMenu">
+        <div class="menu-column">
+            <a href="#">Home & Garden</a> 
+            <a href="#">Business & Industrial</a> 
+            <a href="#">Collectibles</a> 
+            <a href="#">Fashion</a>
+            <a href="#">Electronic</a>
+        </div>
+        <div class="menu-column">
+            <a href="#">Lifestyle </a> 
+            <a href="#">Media</a> 
+            <a href="#">Part & Accessories</a> 
+            <a href="#">Videogames and Console</a> 
+            <a href="#">Mens's Shoes</a> 
+        </div>
+     </div>
+
+     </div>
+     
+    
+
+     
+     <div style=" grid-column: 7">
+        <button class="dropbtn" onclick="toggleDropdown()">Tech</button>
+        <div class="dropdown-content" id="dropdownMenu">
+           <div class="menu-column">
+               <a href="#">Laptop & Netbooks</a> 
+               <a href="#">Camera & Photo</a> 
+               <a href="#">Tv,Video & Home Audio</a> 
+               <a href="#">iPads, Tablet & eReaders</a>
+               <a href="#">Video Games & Console</a>
+           </div>
+           <div class="menu-column">
+               <a href="#">Phone Cases & Accessories</a> 
+               <a href="#">Vehicle Electronic & GPS</a> 
+               <a href="#">Memory Drives & Storage</a> 
+               <a href="#">Printetrs & Printer</a> 
+               <a href="#">Headphones</a> 
+           </div>
+        </div>
+   
+        </div>
+        
+
+        <div style=" grid-column: 8">
+            <button class="dropbtn" onclick="toggleDropdown()">Fashion</button>
+            <div class="dropdown-content" id="dropdownMenu">
+               <div class="menu-column">
+                   <a href="#">Fine Jewelry</a> 
+                   <a href="#">Fashion Jewelry</a> 
+                   <a href="#">Beauty</a> 
+                   <a href="#">Health</a>
+                   <a href="#">Men's Shoes</a>
+               </div>
+               <div class="menu-column">
+                   <a href="#">Women's Shoes </a> 
+                   <a href="#">Handbag</a> 
+                   <a href="#">Men's Clothing</a> 
+                   <a href="#">Women's Clothing</a> 
+                   <a href="#">Kid's Stuff</a> 
+               </div>
+            </div>
+       
+            </div>
+     
+            
+
+
+
+   
+            <div style=" grid-column: 9">
+                <button class="dropbtn" onclick="toggleDropdown()">Home</button>
+                <div class="dropdown-content" id="dropdownMenu">
+                   <div class="menu-column">
+                       <a href="#">Sporting Goods</a> 
+                       <a href="#">Yard Garden & Outerdoor Living</a> 
+                       <a href="#">Cycling</a> 
+                       <a href="#">Home Imorovenent</a>
+                       <a href="#">Kitchen, Dining & Bar</a>
+                   </div>
+                   <div class="menu-column">
+                       <a href="#">Toys </a> 
+                       <a href="#">Outer Sports</a> 
+                       <a href="#">Tools</a> 
+                       <a href="#">Inside  the Home</a> 
+                       <a href="#">Exercise & Fitness</a> 
+                   </div>
+                </div>
+           
+                </div>
+                
+                <div style=" grid-column: 10">
+                    <button class="dropbtn" onclick="toggleDropdown()">More</button>
+                    <div class="dropdown-content" id="dropdownMenu">
+                       <div class="menu-column">
+                           <a href="#">Coins</a> 
+                           <a href="#">Collectibles</a> 
+                           <a href="#">Toys</a> 
+                           <a href="#">Musical Instrument</a>
+                           <a href="#">Travel</a>
+                       </div>
+                       <div class="menu-column">
+                           <a href="#">Sport Fan Shop </a> 
+                           <a href="#">Office Furniture  & Supplies</a> 
+                           <a href="#">Automatic</a> 
+                           <a href="#">Business & Industrial</a> 
+                       </div>
+                    </div>
+               
+                    </div>
+                    
     </div>
 
 
@@ -24,8 +134,8 @@
    
     <div id="box1">SPOTLIGHT DEAL</div>
     <div id="box2">
-        <img id="img1" src="https://i.ebayimg.com/images/g/47AAAOSwTE9kIbkR/s-l1600.webp">
-        <p>Microsoft Xbox Series S US $289.99 3% OFF</p>
+        <img id="img1" src="https://i.ebayimg.com/images/g/47AAAOSwTE9kIbkR/s-l1600.webp"> 
+        <p style="margin-top:100px;margin-left: 100px;font-size:x-large; text-align: start;"><b>Microsoft Xbox Series S</b> <br><b>US $289.99</b><br><s>S $299.00</s> | 3% OFF</p>
     </div>
    
 
@@ -86,6 +196,7 @@
 
         </div>
 
+
      <h3>Home & Garden</h3>   
      <div id="box4">
         <div>1
@@ -113,16 +224,209 @@
                 <b>US $178.99</b></p>
         </div>
         <div style="text-align: center;">
-            <h3 style="margin-top:60px">Shop all 103</h3>
+            <h2 style="margin-top:60px">Shop all 103</h2>
             <p>Home &Garden</p>
-            <p> > </p>
+            <h2> > </h2>
         </div>
          </div>
 
 
+
+<h3>Business & Industrial</h3>
+<div id="box4">
+    <div>1
+    <img id="img2" src="https://i.ebayimg.com/images/g/S1MAAOSwzfJmdn1D/s-l225.jpg">
+    <p>Universal Laser Pointer Gift Storage <br>Box/Fits lasers up to 0.5 in x 6.25 in/10z
+       <br><b> US $8.88</b></p>
+    </div>
+    
+    <div>2
+    <img id="img3" src="https://i.ebayimg.com/images/g/9T4AAOSwR3dj-aB6/s-l300.jpg">
+    </div>
+    
+    <div>3
+        <img id="img2" src="https://i.ebayimg.com/images/g/MtMAAOSwZGllWSi5/s-l225.jpg"> 
+        <p>25pk 1099-MISC Forms 5 Part Laser Tax <br> Forms Kit Pack of Federal/State Copies 13z<br>
+         <b>   US $14.20</b></p>   
+    </div>
+    
+    <div>4
+        <img id="img2" src="https://i.ebayimg.com/images/g/lfsAAOSwfh9nJZlV/s-l225.jpg"> 
+        <p>Black Beast® Pro Grade GREEN Beam Laser Pointer BRIGHTEST USA LEGAL 1mw 17z
+            US $16.95</p>   
+    </div>
+    
+    <div>5
+        <p style="text-align: center; margin-top: 50px;">Disney Princess Erasers 4 Pack - Kids <br> Eraser Pack - Brand New!<br>
+           <b> US $8.88 </b></p> 
+    
+    </div>
+    
+    <div style="text-align: center;">
+        <h2 style="margin-top:60px">Shop all 1,302</h2>
+        <p>Business & Industrial</p>
+        <h2> > </h2>
+    </div>
+    </div>
+
+
+
+
+<h3>Fashion</h3>
+<div id="box4">
+<div>1
+<img id="img2" src="https://i.ebayimg.com/images/g/S1MAAOSwzfJmdn1D/s-l225.jpg">
+<p>Universal Laser Pointer Gift Storage <br>Box/Fits lasers up to 0.5 in x 6.25 in/10z
+   <br><b> US $8.88</b></p>
+</div>
+
+<div>2
+<img id="img3" src="https://i.ebayimg.com/images/g/BsYAAOSwmsliAqdA/s-l300.jpg">
+</div>
+
+<div>3
+    <img id="img2" src="https://i.ebayimg.com/images/g/MtMAAOSwZGllWSi5/s-l225.jpg"> 
+    <p>25pk 1099-MISC Forms 5 Part Laser Tax <br> Forms Kit Pack of Federal/State Copies 13z<br>
+     <b>   US $14.20</b></p>   
+</div>
+
+<div>4
+    <img id="img2" src="https://i.ebayimg.com/images/g/cLsAAOSwIY9nLk9-/s-l225.jpg">
+    <p>New Longines HydroConquest Quartz 41mm Blue Dial Two Men's Watch L3.740.3.98.7
+        US $909.88</p>    
+</div>
+
+<div>5
+    <p style="text-align: center; margin-top: 50px;">Womens The North Face Ladies Canyonland Full Zip Jacket Coat Top NF New
+        US $59.79 </b></p> 
+
+</div>
+
+<div style="text-align: center;">
+    <h2 style="margin-top:60px">Shop all 55</h2>
+    <p>Fashion</p>
+    <h2> > </h2>
+</div>
+</div>
+
+
+
+
+
+<h3>Electronics</h3>
+<div id="box4">
+    <div>1
+    <img id="img2" src="https://i.ebayimg.com/images/g/7WoAAOSwDoVnCab8/s-l225.jpg">
+    <p>Apple iPhone 16 Pro Max 256GB/512GB/1TB✅UNLOCKED✅SHIPS TODAY✅SEALED✅425+ SOLD✅
+        US $1,377.00</p>
+    </div>
+    
+    <div>2
+    <img id="img3" src="https://i.ebayimg.com/images/g/b4MAAOSwFtJmn-EW/s-l300.jpg">
+    </div>
+    
+    <div>3
+        <img id="img2" src="https://i.ebayimg.com/images/g/V7EAAOSwbhFjLLxB/s-l225.jpg"> 
+        <p>Apple iPhone 13 Pro Max 256GB Unlocked - Excellent
+            US $512.95</p>   
+    </div>
+    
+    <div>4
+        <img id="img2" src="https://i.ebayimg.com/images/g/O4EAAOSw2Z5m9OxR/s-l225.jpg">    
+        <p>Acer Nitro V 15.6" FHD 165Hz Gaming Laptop i7-13620H 32GB RAM 512GB SSD RTX 4060
+            US $899.99</p>
+    </div>
+    
+    <div>5
+        <p style="text-align: center; margin-top: 50px;">Google Pixel 8 Pro G1MNW Unlocked 256GB Obsidian Good
+            US $338.99</p> 
+    
+    </div>
+    
+    <div style="text-align: center;">
+        <h2 style="margin-top:60px">Shop all 98</h2>
+        <p>Electronics</p>
+        <h2> > </h2>
+    </div>
+    </div>
+
+    <h3>Videogames and Console </h3>
+    <div id="box4">
+    <div>1
+    <img id="img2" src="https://i.ebayimg.com/images/g/7EgAAOSwel5lp-HE/s-l225.jpg">
+    <p>Nintendo Switch OLED Neon + Mario ✨ Sparks of Hope & Screen Protector Bundle
+        US $309.00</p>
+    </div>
+    
+    <div>2
+    <img id="img3" src="https://i.ebayimg.com/images/g/OSgAAOSwGPFnBD1K/s-l225.jpg">
+    </div>
+    
+    <div>3
+        <img id="img2" src="https://i.ebayimg.com/images/g/jSAAAOSwjERlanag/s-l300.jpg"> 
+        <p>NEW Nintendo Switch OLED 64GB Neon Console SP Bundle + 🛫 2-Day Shipping! 🛬
+            US $287.95</p>   
+    </div>
+    
+    <div>4
+        <img id="img2" src="https://i.ebayimg.com/images/g/G18AAOSwbo9kSbyc/s-l225.jpg">
+        <p>🦑Nintendo Switch OLED SPLATOON 3 64GB SPECIAL Limited Edition Console 🦑
+            US $318.88</p>    
+    </div>
+    
+    <div>5
+        <p style="text-align: center; margin-top: 50px;">NEW Nintendo Switch Lite Zelda Hyrule Edition + Echoes of Wisdom Game Bundle
+            US $249.99</p> 
+    
+    </div>
+    
+    <div style="text-align: center;">
+        <h2 style="margin-top:60px">Shop all 248</h2>
+        <p>Videogames and Console</p>
+        <h2> > </h2>
+    </div>
+    </div>
+
+    <h3>Men's Shoes </h3>
+    <div id="box4">
+    <div>1
+    <img id="img2" src="https://i.ebayimg.com/images/g/kOcAAOSwuh1mwUkv/s-l225.jpg">
+    <p>SolarShield Polarized ClipOn STRETCHABLE Sunglasses/ ALL SIZES w/SIZING GUIDE 9z
+        US $11.68</p>
+    </div>
+    
+    <div>2
+    <img id="img3" src="https://i.ebayimg.com/images/g/dMQAAOSwh6Rm6xjg/s-l225.jpg">
+    </div>
+    
+    <div>3
+        <img id="img2" src="https://i.ebayimg.com/images/g/yjoAAOSwb7hnPNE5/s-l300.jpg"> 
+        <p>Tom Ford Philippe Smoke Rectangular Men's Sunglasses FT0999 52A 58
+            US $228.99</p>   
+    </div>
+    
+    <div>4
+        <img id="img2" src="https://i.ebayimg.com/images/g/McsAAOSw5Y5nhKwQ/s-l225.jpg">
+        <p>Gucci Grey Square Men's Sunglasses GG1084S 001 54 GG1084S 001 54
+            US $177.99</p>    
+    </div>
+    
+    <div>5
+        <p style="text-align: center; margin-top: 50px;">Tom Ford August Green Rectangular Men's Sunglasses FT0678 52N 58 FT0678 52N 58
+            US $186.99</p> 
+    
+    </div>
+    
+    <div style="text-align: center;">
+        <h2 style="margin-top:60px">Shop all 2,745</h2>
+        <p>Men's Shoes</p>
+        <h2> > </h2>
+    </div>
+    </div>
 
 
 
 
 </body>
 </html>
+<script src=../js/ebaysDailyDeals.js></script>

@@ -1,35 +1,90 @@
 #deals{
     display:grid;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 250px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    z-index: 1;
+    display: flex;
+}
+.menu-column {
+    margin-right: 20px;
+}
 
+.dropdown-content a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 0;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+p{
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 #box1{
 margin-left: 10px;
 margin-right:20px ;
 margin-top: 5px;
     width:98%;
     height:40px;
-    border: 5px;
     padding: 2px;
     color:blue;
     text-align: center;
-    background-color: lightgrey;
+    background-color: whitesmoke;
     font-weight: bold;
     font-size:large;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 #box2{
     display: flex;
-    margin-top: 1px;
+    margin-top: 5px;
     margin-left: 10px;
     width: 98%;
     height:400px;
     padding: 2px;
-    background-color:lightgray;
-    text-align: center;
+    background-color:whitesmoke;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
 
 }
 #img1{
- width: 50%;
- height:380px;   
+ width: 400px;
+ height:400px;   
 }
 
 
@@ -50,55 +105,55 @@ grid-template-columns: repeat(3,1fr);
 
 #box3>div:first-child{
     margin-top: 5px;
-  background-color: lightgray;
+  background-color: whitesmoke;
     text-align:center;
     height: 200px;
 }
 #box3>div:nth-child(2){
     margin-top: 5px;
-    background-color: lightgray;
+    background-color: whitesmoke;
       text-align: center;
       height: 200px;
 }
 #box3>div:nth-child(3){
     margin-top: 5px;
-    background-color: lightgray;
+    background-color: whitesmoke;
       text-align: center;
       height: 200px;
 }
 #box3>div:nth-child(4){
     margin-top: 5px;
-    background-color: lightgray;
+    background-color: whitesmoke;
       text-align: center;
       height: 200px;
 }
 #box3>div:nth-child(5){
     margin-top: 5px;
-    background-color: lightgray;
+    background-color: whitesmoke;
       text-align: center;
       height: 200px;
 }
 #box3>div:nth-child(6){
     margin-top: 5px;
-    background-color: lightgray;
+    background-color: whitesmoke;
       text-align: center;
       height: 200px;
 }
 #box3>div:nth-child(7){
     margin-top: 5px;
-    background-color: lightgray;
+    background-color: whitesmoke;
       text-align: center;
       height: 200px;
 }
 #box3>div:nth-child(8){
     margin-top: 5px;
-    background-color: lightgray;
+    background-color: whitesmoke;
       text-align: center;
       height: 200px;
 }
 #box3>div:nth-child(9){
     margin-top: 5px;
-    background-color: lightgray;
+    background-color:whitesmoke;
       text-align: center;
       height: 200px;
 }
@@ -120,46 +175,44 @@ grid-template-columns: repeat(3,1fr);
  
  height: 200px;
  margin-right: 3px;
- background-color: lightgray;
+ background-color:whitesmoke;
  text-align: center;
 
 }
 #box4>div:nth-child(2){
  height: 200px;
  margin-right: 3px;
- background-color: lightgray;
+ background-color: whitesmoke;
  margin-top: 2px;
 
 }
 #box4>div:nth-child(3){
     height: 200px;
     margin-right: 3px;
-    background-color: lightgray;
+    background-color: whitesmoke;
     text-align: center;
    }
    #box4>div:nth-child(4){
     height: 200px;
     margin-right: 3px;
-    background-color: lightgray;
+    background-color: whitesmoke;
     text-align: center;
    }  
    
    #box4>div:nth-child(5){
     height: 200px;
     margin-right: 3px;
-    background-color: lightgray;
+    background-color: whitesmoke;
     text-align: center;
    }
    #box4>div:nth-child(6){
     height: 200px;
     margin-right: 3px;
-    background-color: lightgray;
+    background-color: whitesmoke;
     text-align: center;
    }
 
-   p{
-    text-align: center;
-   }
+   
    #img3{
     width:70%;
     height: 250px;
