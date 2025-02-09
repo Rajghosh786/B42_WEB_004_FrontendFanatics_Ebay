@@ -4,14 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Document</title>
-    <link rel="stylesheet" href="../css/ebayAdvance.css">
+    <link rel="stylesheet" href="../css/ebayAdvance2.css">
+    <script src="https://kit.fontawesome.com/d792cef6f0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+        <!--  Main navbar  -->
+<nav class="navbar-t">
+    <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    <div class="left">
+        <!-- Auth Links will be dynamically updated here -->
+        <p id="auth-links">Hi! <a href="login.html">Sign in</a> or <a href="signup.html">register</a></p>
+        <p><a href="ebayDailyDeals.html">Daily Deals</a></p>
+        <p><a href="brandoutlet.html">Brand Outlet</a></p>
+        <p><a href="giftcard.html">Gift Cards</a></p>
+        <p><a href="help&contact.html">Help & Support</a></p>
+    </div>
+    <ul class="menu">
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="wishlist.html">Wishlist</a> <i class="fa-solid fa-angle-down"></i></li>
+        <li><a href="wishlist.html">My eBay</a> <i class="fa-solid fa-angle-down"></i></li>
+        <a href="#"><i class="fa-regular fa-bell"></i></a>
+        <a href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    </ul>
+  </nav>
+  
+      <nav class="navbar-b">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay Logo" class="logo">
+          <div class="category-dropdown">
+              <p class="category-btn">Shop by Category <i class="fa-solid fa-angle-down"></i> </p>
+              <div class="dropdown-content">
+                  <div class="column">
+                      <h4>Motors</h4>
+                      <p>Parts & Accessories</p>
+                      <p>Cars & Trucks</p>
+                      <p>Motorcycles</p>
+                      <p>Other Vehicles</p>
+                  </div>
+                  <div class="column">
+                      <h4>Electronics</h4>
+                      <p>Computers, Tablets & Network Hardware</p>
+                      <p>Cell Phones, Smart Watches & Accessories</p>
+                      <p>Video Games & Consoles</p>
+                      <p>Cameras & Photo</p>
+                  </div>
+                  <div class="column">
+                      <h4>Collectibles & Art</h4>
+                      <p>Trading Cards</p>
+                      <p>Collectibles</p>
+                      <p>Coins & Paper Money</p>
+                      <p>Sports Memorabilia</p>
+                  </div>
+                  <div class="column">
+                      <h4>Home & Garden</h4>
+                      <p>Yard, Garden & Outdoor Living Items</p>
+                      <p>Tools & Workshop Equipment</p>
+                      <p>Home Improvement</p>
+                      <p>Kitchen, Dining & Bar Supplies</p>
+                  </div>
+              </div>
+          </div>
+          <div class="search-container">
+              <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search for anything" class="search-input">
+              <select class="category-dropdown">
+                  <option>All Categories</option>
+                  <option>Electronics</option>
+                  <option>Fashion</option>
+                  <option>Home & Garden</option>
+                  <option>Jewellery</option>
+                  <option>Men's Wear</option>
+                  <option>Women's Wear</option>
+              </select>
+              
+          </div>
+          <button class="search-button">Search</button>
+          <a href="ebayAdvance.html" class="advanced-search">Advanced</a>
+      </nav> <hr>
+  
+  <!--   main nav bar end -->
+ <!--    
 <section class="sec1">
     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAABNVBMVEX///99xET///0Dc7v7rBv8///uPUP///sBcr3wPUH//f8Abrx9w0bhdHn2pQDtNjjly84AZLH4rhz24694psgEdLhynsGv0N7wMDTv/f3k8dmnydb///XwpwAAbbb2///89ubpIirtu7n48trS6Ma626L/pwB6xT3X6MH1143x+urnhYiExk/q9vJ/rMUyfLYrdLL36+X02tX1y8bvwsX48fPn8PXU6fHA4O356sf657zkjo7hZmniPETeIynpYWpelcAAXqD216HvwF/0tTncUVYUbKT0xnH49tOXymi64Jzp4JSQy2D23+Toi5buXmFIh7mWxdztuku+x0rgnpfosiaOv0XlnqPAtDXdT0rU25Waz4NjgKljbZlaW4eg0npTYpmUwOS0wqjCrXTSoDVRgpyhsqagzY7RAAAIjElEQVR4nO2Ye1viSBaHK4VFQUDS3AQ1JlyUmyheiYDatICooy26M+u6PbO9s7uz3/8j7DlVAQnQYM+z3e0f9bbNA4SQX879QIhCoVAoFAqFQqFQKBQKhUKhUCgUCoVCofh/wzlnwI+W4YVyTin90SomWN1B3pKlQMtuDdhLEf3N6AIhiZDPF4iuvzlRybcnykq+QVFgKZ8StYgXUW+oUo1EpX5c/aSjR/oiyhqJovJh7KMvZ3pei28QfPFKr7xJxsc6HNMZp6M6JUUxzqn8Qk51z3difyTwh02Sio9RFzwwhc2wc1H2Cl1w9vH+wWEulzs62D9m+HpcFAMpdt05SaVOnLpt6uO3DbdDzUy+0YzHm4183mTc5KgU5XE+62Ly0GJR9rvW6dl5Fjk/e986dG9xxRVFyM5DuxZFPly2dx0px33kjYtOd2MjAmxEYp2LPOGlTYE56WhgrSQO8rmWwsmE5nqGEfT74c8fBAzj9NDW4TxXFFndvQyFAgA+hCxrt44eRzPprNGPRSJLklhsKRKJ9a+2ikVN04pbUxfTzWsNj9xwc64ocNx2OoiCQE3aAE1+v5E+b6HbXVH1djQUgC4YCoWSvgA8i9ZOMIyIblYuYlJRoYCmEk8j3Z+qeOnw7Q6fvFgpDBSra/o894Gd7u7TaB/j7H7548ePy/d+EOYPppe56z7roWYFfFay1l5pD/YskBdIBqwHjBeulzfAPqAj1un3+51HV+HSX4QoMJXXS9y8LoaFCee6j5HjU8OPtjk9OsY36PHRaRYNZ/xsoyiwS9IKhKLtVN2GActZr1n4ns8SOZnfkCrKVxnIOp5p9pcKoHHpl7+iKq06WRlK8u3KjGDzqGoZ6Dh/jtnuOzZ7CqLO86OhqIAF7oJ8YZg5q7sWivLVMNz7BRQVa2IxEHa34118Y+lvEFRhYZLxsmDeoqG0rUW5d2CI8M4xqCuuQ5ndOscQe3ZFBUKXDsSoPMoJ3Y2iqNAKIZluASI7UhZlQMSCzi4KKOoXGVXViiegS0LTQkORZYygdMtrPXLmR5ceJoQoX/Jk7CAUpoTwYNRheYijTr/TGIsQO98VDv27htfXbsZOBENp4XC1uMhQ9vEzpltw37uy2D+LOGu5ohLjPgCLOh9EAiRMfIEV3Rxdhdq0gx6NND9Jq7xYimLqQfRXK3NTDzgKYuYt6x6DMnYHpgoa76X7LGf8KBR37Ing1UEdnmO/4GNNg5EO+i/S3ERTyQR0y6xIvaJWmm8o8ASaJGg8TR7Zf8aguv81kISL12xPYMAlToQon4O9DnoSzTca8QugXC5flEWkR+LkGguodm2OWkpJVNTbRRHFybbIvd7y6bKHbRFU/t9QVCgxdWtOTVTVEygK5lW5gy2mgIhWs+SK2gyHZVl3ne8W88naNQWDOEdLQWPxkA7KjvMPFBVdnzJ3fSBEPRDS6HfdUoU9JgYsDUXxz+BAEEbNoaFk6i3SxNi9vLrb9MbAThj8pxAFe9/EF+0Mkijqd7M8antYGpDCyFJkTdNGHRC63i1WLm1rUZRDOLiiYDpIZ9Np+C+fiNdG1rXU1IxeH1i4EP4OTQYtA27rPvb7ZcmjK4oRkYDF64q4VEnDrne7MPXgs6dBEejvZnKwIkQ98GlRwn3/2hDOgrEgT5gcwSAP+xEpiupr1eGwQGXqaZh686cWzGUR6EbuC8dFSQi16VSgJ0Wn+bfw20Y8Q9lwvIIa0RnGFDG3hKgqDH2y64HVFo/CXBclIb3NJ6NG3LbbZvZWJ78pFcXuU/sPGirSt8emdiikw5IAY0QFE7CICchvRYCVFinCryCHOA8Ee6bH06Py7hbPFJlwXzuE9euPLoraaI4fpeRqlH3w70ZUUChNpWLVLVqv4PgeG3I252kzjLW2Ebf3hQY79MWDUDBTUR+oiv5Xpn/eq7gcGYkipFKVtYrfhrE+lCbv7gu0xBz8vO958yCL1Sp74PY+KEjmmCXrA2zSoct8TIaU59S8qFRDUURElVbF1IOIMhennmD/DIuC0dvHxMHYgOS464mO2KPD0SX6AAOT3I0ogeE4AJqs9cwjFoTCo85gv8FRHz6T70bGRVETmh1EFTpRC2+SqZSZic6eDFE3e0fMxjHPZuygJwb28xxpw4wSCFjwh6uC2CJZ6g8Y8mB9aK/SckGOnRmcsnBTZI1HEVEQ/lIUd00lU2/usjAGnNnKCg3ZU9z57t7l3mdFQc0+MSHKZ7WjvmT0Q+LBcZyTh0EUVxqfBXFGhP9isUI3ns9UKpVGE6eWjUeRk1IU0yvXQ1GvSj0J3H3rXHRl49x/dn/mN+Qoamyv6qwtVhcnEcJVwUruJS0LqiZsNNbAQcvEYxEZ7F0E9iv46zexzA/dh0OUa6jPs1fTL8ByvbS36xnZsyPwo91GNVGHr+/BExHzEivhDvTN2Evvk1vNBb/C7he5GI0WVampuEkXzQceUeT4qXcWNKQm3P2ec/s4jdvt5N7e3qVjknoiGYpigIGpQpdtZ9gqaL4fWyq4614BGk7DhFjvwrBQHonaFP0FDEW+4tcbEaL0LtdaPr3v3b9fbuUOcJSEROGrAvFzx2pqtz2o1QbtlXWHEHfUxADPx/sdkNGFlhzP42ksn8F/o7VejiyYeq+3kzwT0PVjRNe/8Alm7+zs1G0+9VOQaZoZwJxRrvHO5Gz3+bWp5wG3cGng2VUXf3lhsIjNOEqxH8wsQaBT7p/FtT+jSV6XzusDKEnsDR5BUFJxDIeJZEZ2UVIRo3rx8/xF/bvCh4v6JnvNL1LfB27KOe+T+TWp903B0omawtra65redwA0VcRsV/z0Vswk+uqNbMdrX1ujvh2crN1WgfDNn6pR3wZOK2uCypuJcjJW+fW3I4oOW+TMNqBQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKL6a/wFTVumj0z7UzgAAAABJRU5ErkJggg==">
-<div>
+-->
+
+<div id="col"> 
+ <div>   
 <h1>Advanced Search</h1>
+
 <h4>Items</h4>
+
 <ul>
     <li><a href ="#">Find Items</a></li>
     <li><a href ="#">By seller</a></li>
@@ -19,14 +99,19 @@
 </ul>
 
 <h4>Stores</h4>
+
 <ul>
     <li><a href ="#">Items in stores</a></li>
     <li><a href ="#">Finf stores</a></li>
     
 </ul>
+</div>
+
+
+<div  id="content">
 </section>
 
- <section id="sec2">  
+ <section id="sec2"> 
 
 <h3>Find Item</h3>
 <hr>
@@ -301,7 +386,26 @@
 
 <button type="button">Search</button>
 <a href="clear">Clear options</a>
-
 </section> 
+</div>
+</div>
+
+
+
+
+    <!-- last footer part -->
+    <footer class="same-footer">
+        <p>
+          Copyright © 1995-2025 eBay Inc. All Rights Reserved.
+          <a href="#" class="same-link">Accessibility</a>,
+          <a href="#" class="same-link">User Agreement</a>,
+          <a href="#" class="same-link">Privacy</a>,
+          <a href="#" class="same-link">Payments Terms of Use</a>,
+          <a href="#" class="same-link">Cookies</a>,
+          <a href="#" class="same-link">CA Privacy Notice</a>,
+          <a href="#" class="same-link">Your Privacy Choices</a>, and
+          <a href="#" class="same-link">AdChoice</a>.
+        </p>
+      </footer>
 </body>
 </html>
