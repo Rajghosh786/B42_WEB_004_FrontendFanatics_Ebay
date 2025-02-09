@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/ebayDailyDeals2.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d792cef6f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--  Main navbar  -->
+<nav class="navbar-t">
+    <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    <div class="left">
+        <!-- Auth Links will be dynamically updated here -->
+        <p id="auth-links">Hi! <a href="login.html">Sign in</a> or <a href="signup.html">register</a></p>
+        <p><a href="ebayDailyDeals.html">Daily Deals</a></p>
+        <p><a href="brandoutlet.html">Brand Outlet</a></p>
+        <p><a href="giftcard.html">Gift Cards</a></p>
+        <p><a href="help&contact.html">Help & Support</a></p>
+    </div>
+    <ul class="menu">
+        <li><a href="sell.html">Sell</a></li>
+        <li><a href="wishlist.html">Wishlist</a> <i class="fa-solid fa-angle-down"></i></li>
+        <li><a href="wishlist.html">My eBay</a> <i class="fa-solid fa-angle-down"></i></li>
+        <a href="#"><i class="fa-regular fa-bell"></i></a>
+        <a href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    </ul>
+  </nav>
+  
+      <nav class="navbar-b">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay Logo" class="logo">
+          <div class="category-dropdown">
+              <p class="category-btn">Shop by Category <i class="fa-solid fa-angle-down"></i> </p>
+              <div class="dropdown-content">
+                  <div class="column">
+                      <h4>Motors</h4>
+                      <p>Parts & Accessories</p>
+                      <p>Cars & Trucks</p>
+                      <p>Motorcycles</p>
+                      <p>Other Vehicles</p>
+                  </div>
+                  <div class="column">
+                      <h4>Electronics</h4>
+                      <p>Computers, Tablets & Network Hardware</p>
+                      <p>Cell Phones, Smart Watches & Accessories</p>
+                      <p>Video Games & Consoles</p>
+                      <p>Cameras & Photo</p>
+                  </div>
+                  <div class="column">
+                      <h4>Collectibles & Art</h4>
+                      <p>Trading Cards</p>
+                      <p>Collectibles</p>
+                      <p>Coins & Paper Money</p>
+                      <p>Sports Memorabilia</p>
+                  </div>
+                  <div class="column">
+                      <h4>Home & Garden</h4>
+                      <p>Yard, Garden & Outdoor Living Items</p>
+                      <p>Tools & Workshop Equipment</p>
+                      <p>Home Improvement</p>
+                      <p>Kitchen, Dining & Bar Supplies</p>
+                  </div>
+              </div>
+          </div>
+          <div class="search-container">
+              <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search for anything" class="search-input">
+              <select class="category-dropdown">
+                  <option>All Categories</option>
+                  <option>Electronics</option>
+                  <option>Fashion</option>
+                  <option>Home & Garden</option>
+                  <option>Jewellery</option>
+                  <option>Men's Wear</option>
+                  <option>Women's Wear</option>
+              </select>
+              
+          </div>
+          <button class="search-button">Search</button>
+          <a href="ebayAdvance.html" class="advanced-search">Advanced</a>
+      </nav> <hr>
+  
+  <!--   main nav bar end -->
+   
+  
+  <div id="deals">
+    <h2 style="grid-row:1;">Deals</h2>
+
+    <div style="grid-column: 6;" >
+    <button class="dropbtn" onclick="toggleDropdown()">Featured</button>
+    <div class="dropdown-content" id="dropdownMenu">
+       <div class="menu-column">
+           <a href="#">Home & Garden</a> 
+           <a href="#">Business & Industrial</a> 
+           <a href="#">Collectibles</a> 
+           <a href="#">Fashion</a>
+           <a href="#">Electronic</a>
+       </div>
+       <div class="menu-column">
+           <a href="#">Lifestyle </a> 
+           <a href="#">Media</a> 
+           <a href="#">Part & Accessories</a> 
+           <a href="#">Videogames and Console</a> 
+           <a href="#">Mens's Shoes</a> 
+       </div>
+    </div>
+
+    </div>
+    
+   
+
+    
+    <div style=" grid-column: 7">
+       <button class="dropbtn" onclick="toggleDropdown()">Tech</button>
+       <div class="dropdown-content" id="dropdownMenu">
+          <div class="menu-column">
+              <a href="#">Laptop & Netbooks</a> 
+              <a href="#">Camera & Photo</a> 
+              <a href="#">Tv,Video & Home Audio</a> 
+              <a href="#">iPads, Tablet & eReaders</a>
+              <a href="#">Video Games & Console</a>
+          </div>
+          <div class="menu-column">
+              <a href="#">Phone Cases & Accessories</a> 
+              <a href="#">Vehicle Electronic & GPS</a> 
+              <a href="#">Memory Drives & Storage</a> 
+              <a href="#">Printetrs & Printer</a> 
+              <a href="#">Headphones</a> 
+          </div>
+       </div>
+  
+       </div>
+       
+
+       <div style=" grid-column: 8">
+           <button class="dropbtn" onclick="toggleDropdown()">Fashion</button>
+           <div class="dropdown-content" id="dropdownMenu">
+              <div class="menu-column">
+                  <a href="#">Fine Jewelry</a> 
+                  <a href="#">Fashion Jewelry</a> 
+                  <a href="#">Beauty</a> 
+                  <a href="#">Health</a>
+                  <a href="#">Men's Shoes</a>
+              </div>
+              <div class="menu-column">
+                  <a href="#">Women's Shoes </a> 
+                  <a href="#">Handbag</a> 
+                  <a href="#">Men's Clothing</a> 
+                  <a href="#">Women's Clothing</a> 
+                  <a href="#">Kid's Stuff</a> 
+              </div>
+           </div>
+      
+           </div>
+    
+           
+
+
+
+  
+           <div style=" grid-column: 9">
+               <button class="dropbtn" onclick="toggleDropdown()">Home</button>
+               <div class="dropdown-content" id="dropdownMenu">
+                  <div class="menu-column">
+                      <a href="#">Sporting Goods</a> 
+                      <a href="#">Yard Garden & Outerdoor Living</a> 
+                      <a href="#">Cycling</a> 
+                      <a href="#">Home Imorovenent</a>
+                      <a href="#">Kitchen, Dining & Bar</a>
+                  </div>
+                  <div class="menu-column">
+                      <a href="#">Toys </a> 
+                      <a href="#">Outer Sports</a> 
+                      <a href="#">Tools</a> 
+                      <a href="#">Inside  the Home</a> 
+                      <a href="#">Exercise & Fitness</a> 
+                  </div>
+               </div>
+          
+               </div>
+               
+               <div style=" grid-column: 10">
+                   <button class="dropbtn" onclick="toggleDropdown()">More</button>
+                   <div class="dropdown-content" id="dropdownMenu">
+                      <div class="menu-column">
+                          <a href="#">Coins</a> 
+                          <a href="#">Collectibles</a> 
+                          <a href="#">Toys</a> 
+                          <a href="#">Musical Instrument</a>
+                          <a href="#">Travel</a>
+                      </div>
+                      <div class="menu-column">
+                          <a href="#">Sport Fan Shop </a> 
+                          <a href="#">Office Furniture  & Supplies</a> 
+                          <a href="#">Automatic</a> 
+                          <a href="#">Business & Industrial</a> 
+                      </div>
+                   </div>
+              
+                   </div>
+                   
+   </div>
+
+
+
+  
+   <div id="box1">SPOTLIGHT DEAL</div>
+   <div id="box2">
+       <img id="img1" src="https://i.ebayimg.com/images/g/47AAAOSwTE9kIbkR/s-l1600.webp"> 
+       <p style="margin-top:100px;margin-left: 100px;font-size:x-large; text-align: start;"><b>Microsoft Xbox Series S</b> <br><b>US $289.99</b><br><s>S $299.00</s> | 3% OFF</p>
+   </div>
+  
+
+
+
+       <div id="box1">FEATURE DEALS</div>
+       <div id="box3">
+          <div>
+           
+           <img id="img2" src="https://i.ebayimg.com/images/g/D7UAAOSwIBxm4zO6/s-l225.jpg">
+           <p style="text-align:center;">Google Pixel 8 Pro 128GB Factory<br> Unlocked - Excellent<br>
+               <b> US $349.99</b></p>
+           </div>
+
+          <div>
+          <img id="img2" src="https://i.ebayimg.com/images/g/VJUAAOSwwWZl2PI8/s-l225.jpg">
+          <p  style="text-align:center;"> Apple iPhone 15 128GB <br>( Unlocked) US E-Sim Version. Excellent<br>
+          <b> US $524.99 </b></p>
+
+          </div>
+          <div>
+           <img id="img2" src="https://i.ebayimg.com/images/g/oBoAAOSw0HxnKSCQ/s-l225.jpg">
+           <p  style="text-align:center;"> Samsung Galaxy Z Fold4 512GB F936U <br>Unlocked - Good<br>
+              <b> US $414.99</b></p>
+          </div>
+          <div>
+           <img id="img2" src="https://i.ebayimg.com/images/g/~z8AAOSwVZxkNGTt/s-l225.jpg">
+           <p  style="text-align:center;"> Apple iPhone 13 128GB <br> Unlocked - Excellent<br>
+               <b>US $322.99</b></p>
+          </div>
+
+          <div>
+           <img id="img2" src="https://i.ebayimg.com/images/g/EFIAAOSwVwZnIQpe/s-l225.jpg">
+           <p  style="text-align:center;">Samsung Galaxy S22 Ultra 128GB S908U <br> Unlocked - Very Good<br>
+              <b> US $359.99 </b></p>
+          </div>
+          <div>
+           <img id="img2" src="https://i.ebayimg.com/images/g/0gAAAOSwG4hmmUAN/s-l225.jpg">
+           <p  style="text-align:center;"> REDTIGER 4K Dash Cam Front and Rear Dual <br>Dash Camera With 32GB SD Card<br>
+              <b> US $69.99</b>
+           </p>
+          </div>
+          <div>
+           <img id="img2" src="https://i.ebayimg.com/images/g/HDsAAOSwdi9nN1xp/s-l225.jpg">
+           <p  style="text-align:center;">PUMA Men's ST MILER Sneakers<br>
+               <b>US $38.99</b></p>
+          </div>
+          <div>
+           <img id="img2" src="https://i.ebayimg.com/images/g/oBoAAOSwGRtnQPJl/s-l225.jpg">
+           <p  style="text-align:center;">Sony WH-CH720N Noise Canceling<br> Wireless Headphones<br>
+             <b>  US $59.99</b> </p>
+          </div>
+          <div>
+           <img id="img2" src="https://i.ebayimg.com/images/g/BIgAAOSwbdlmtQ4Y/s-l225.jpg">
+           <p  style="text-align:center;">MSI G274QPF 27" WQHD Flat Rapid<br> IPS Gaming Monitor, 170Hz/1ms HDR400<br>
+             <b>  US $139.99</b></p>
+          </div>
+
+       </div>
+
+<br>
+    <h1 id="head">Home & Garden</h1>  
+    <div id="box4">
+       <div>
+           <img id="img2" src="https://i.ebayimg.com/images/g/kqsAAOSwLf5niMlV/s-l225.jpg"><br>
+           <p>DEWALT DCF900P1R 20V MAX XR 1/2" Impact<br> Wrench Kit (5 Ah) Certified Refurbished
+              <br> <b>US $282.99</b></p>
+       </div>
+       <div>
+        <img id="img3" src="https://i.ebayimg.com/images/g/Xt0AAOSw7t9g-8zy/s-l300.jpg">
+
+       </div>
+       <div>
+           <img id="img2" src="https://i.ebayimg.com/images/g/RvwAAOSwZWVnBNZp/s-l225.jpg"><br>  
+           <p>10Pks Make 10 GALLONS- Magichem STRONGEST<br> BLEACH - Low as 32¢/gallon 10z<br>
+             <b>  US $9.95 </b></p> 
+       </div>
+       <div>
+           <img id="img2" src="https://i.ebayimg.com/images/g/FowAAOSwiOxni~CQ/s-l225.jpg"><br>
+           <p>DeWalt DCN680D1R 20V MAX XR 18 Gauge <br>Cordless Brad Nailer Certified Refurbished
+              <br> <b>US $249.99</b></p>
+
+       </div>
+       <div>
+           <p style="margin-top: 70px; text-align: center;">DEWALT DCS356C1 20V MAX XR Li-Ion<br> Oscillating Multi-Tool Kit (2 Ah) New<br>
+               <b>US $178.99</b></p>
+       </div>
+       <div style="text-align: center;">
+           <h2 style="margin-top:70px">Shop all 103</h2>
+           <p>Home &Garden</p>
+           <h2> > </h2>
+       </div>
+        </div>
+
+
+<br>
+<h1 id="head">Business & Industrial</h1>
+<div id="box4">
+   <div>
+   <img id="img2" src="https://i.ebayimg.com/images/g/uCAAAOSwBa5l7NUC/s-l225.jpg"><br>
+   <p>Universal Laser Pointer Gift Storage <br>Box/Fits lasers up to 0.5 in x 6.25 in/10z
+      <br><b> US $8.88</b></p>
+   </div>
+   
+   <div>
+   <img id="img3" src="https://i.ebayimg.com/images/g/9T4AAOSwR3dj-aB6/s-l300.jpg">
+   </div>
+   
+   <div>
+       <img id="img2" src="https://i.ebayimg.com/images/g/MtMAAOSwZGllWSi5/s-l225.jpg"><br> 
+       <p>25pk 1099-MISC Forms 5 Part Laser Tax Forms Kit<br> Pack of Federal/State Copies 13z<br>
+        <b>   US $14.20</b></p>   
+   </div>
+   
+   <div>
+       <img id="img2" src="https://i.ebayimg.com/images/g/lfsAAOSwfh9nJZlV/s-l225.jpg"> <br>
+       <p>Black Beast® Pro Grade GREEN Beam Laser<br> Pointer BRIGHTEST USA LEGAL 1mw 17z<br>
+          <b> US $16.95</b></p>   
+   </div>
+   
+   <div>
+       <p style="text-align: center; margin-top: 50px;">Disney Princess Erasers 4 Pack - Kids <br> Eraser Pack - Brand New!<br>
+          <b> US $8.88 </b></p> 
+   
+   </div>
+   
+   <div style="text-align: center;">
+       <h2 style="margin-top:70px">Shop all 1,302</h2>
+       <p>Business & Industrial</p>
+       <h2> > </h2>
+   </div>
+   </div>
+
+
+
+<br>
+<h1 id="head">Fashion</h1>
+<div id="box4">
+<div>
+<img id="img2" src="https://i.ebayimg.com/images/g/S1MAAOSwzfJmdn1D/s-l225.jpg"><br>
+<p>Universal Laser Pointer Gift Storage <br>Box/Fits lasers up to 0.5 in x 6.25 in/10z
+  <br><b> US $8.88</b></p>
+</div>
+
+<div>
+<img id="img3" src="https://i.ebayimg.com/images/g/BsYAAOSwmsliAqdA/s-l300.jpg">
+</div>
+
+<div>
+   <img id="img2" src="https://i.ebayimg.com/images/g/xOoAAOSw~IFnLk79/s-l225.jpg"> <br>
+   <p>New Tissot PRX Powermatic 80 Special Edition<br> Men's Watch T137.407.11.041.02<br>
+   <b> US $649.52</b></p>   
+</div>
+
+<div>
+   <img id="img2" src="https://i.ebayimg.com/images/g/cLsAAOSwIY9nLk9-/s-l225.jpg"><br>
+   <p>New Longines HydroConquest Quartz 41mm Blue<br> Dial Two Men's Watch L3.740.3.98.7<br>
+       <b>US $909.88 </b></p>    
+</div>
+
+<div>
+   <p style="text-align: center; margin-top: 70px;">Womens The North Face Ladies Canyonland<br> Full Zip Jacket Coat Top NF New<br>
+      <b> US $59.79</b></p> 
+
+</div>
+
+<div style="text-align: center;">
+   <h2 style="margin-top:60px">Shop all 55</h2>
+   <p>Fashion</p>
+   <h2> > </h2>
+</div>
+</div>
+
+
+
+<br>
+<h1 id="head">Electronics</h1>
+<div id="box4">
+   <div>
+   <img id="img2" src="https://i.ebayimg.com/images/g/7WoAAOSwDoVnCab8/s-l225.jpg"><br>
+   <p>Apple iPhone 16 Pro Max 256GB/512GB/1TB <br>✅UNLOCKED✅SHIPS TODAY✅425+ SOLD✅<br>
+      <b> US $1,377.00</b></p>
+   </div>
+   
+   <div>
+   <img id="img3" src="https://i.ebayimg.com/images/g/b4MAAOSwFtJmn-EW/s-l300.jpg">
+   </div>
+   
+   <div>
+       <img id="img2" src="https://i.ebayimg.com/images/g/V7EAAOSwbhFjLLxB/s-l225.jpg"><br>
+       <p>Apple iPhone 13 Pro Max 256GB <br>Unlocked - Excellent<br>
+          <b> US $512.95</b></p>   
+   </div>
+   
+   <div>
+       <img id="img2" src="https://i.ebayimg.com/images/g/O4EAAOSw2Z5m9OxR/s-l225.jpg"><br>  
+       <p>Acer Nitro V 15.6" FHD 165Hz Gaming Laptop<br> i7-13620H 32GB RAM 512GB SSD RTX 4060<br>
+           <b>US $899.99</b></p>
+   </div>
+   
+   <div>
+       <p style="text-align: center; margin-top: 50px;">Google Pixel 8 Pro G1MNW Unlocked<br> 256GB Obsidian Good<br>
+           <b>US $338.99</b></p> 
+   
+   </div>
+   
+   <div style="text-align: center;">
+       <h2 style="margin-top:60px">Shop all 98</h2>
+       <p>Electronics</p>
+       <h2> > </h2>
+   </div>
+   </div>
+
+   <br>
+   <h1 id="head">Videogames and Console </h1>
+   <div id="box4">
+   <div>
+   <img id="img2" src="https://i.ebayimg.com/images/g/7EgAAOSwel5lp-HE/s-l225.jpg"><br>
+   <p>Nintendo Switch OLED Neon + Mario ✨<br> Sparks of Hope & Screen Protector Bundle<br>
+      <b> US $309.00</b></p>
+   </div>
+   
+   <div>
+   <img id="img3" src="https://i.ebayimg.com/images/g/OSgAAOSwGPFnBD1K/s-l225.jpg">
+   </div>
+   
+   <div>
+       <img id="img2" src="https://i.ebayimg.com/images/g/jSAAAOSwjERlanag/s-l300.jpg"><br> 
+       <p>NEW Nintendo Switch OLED 64GB Neon Console<br> SP Bundle + 🛫 2-Day Shipping! 🛬<br>
+           <b>US $287.95</b></p>   
+   </div>
+   
+   <div>
+       <img id="img2" src="https://i.ebayimg.com/images/g/G18AAOSwbo9kSbyc/s-l225.jpg"><br>
+       <p>🦑Nintendo Switch OLED SPLATOON 3 64GB<br> SPECIAL Limited Edition Console 🦑<br>
+           <b >US $318.88</b></p>    
+   </div>
+   
+   <div>
+       <p style="text-align: center; margin-top: 70px;">NEW Nintendo Switch Lite Zelda Hyrule <br>Edition + Echoes of Wisdom Game Bundle<br>
+           <b>US $249.99</b></p> 
+   
+   </div>
+   
+   <div style="text-align: center;">
+       <h2 style="margin-top:60px">Shop all 248</h2>
+       <p>Videogames and Console</p>
+       <h2> > </h2>
+   </div> 
+   </div>
+
+   <br>
+   <h1 id="head">Men's Shoes </h1>
+   <div id="box4">
+   <div>
+   <img id="img2" src="https://i.ebayimg.com/images/g/kOcAAOSwuh1mwUkv/s-l225.jpg"><br>
+   <p>SolarShield Polarized ClipOn STRETCHABLE <br>Sunglasses/ ALL SIZES w/SIZING GUIDE 9z<br>
+       <b>US $11.68</b></p>
+   </div>
+   
+   <div>
+   <img id="img3" src="https://i.ebayimg.com/images/g/dMQAAOSwh6Rm6xjg/s-l225.jpg">
+   </div>
+   
+   <div>
+       <img id="img2" src="https://i.ebayimg.com/images/g/yjoAAOSwb7hnPNE5/s-l300.jpg"> <br>
+       <p>Tom Ford Philippe Smoke Rectangular<br> Men's Sunglasses FT0999 52A 58<br>
+           <b>US $228.99</b></p>   
+   </div>
+   
+   <div>
+       <img id="img2" src="https://i.ebayimg.com/images/g/McsAAOSw5Y5nhKwQ/s-l225.jpg"><br>
+       <p>Gucci Grey Square Men's Sunglasses<br> GG1084S 001 54 GG1084S 001 54<br>
+           <b>US $177.99</b></p>    
+   </div>
+   
+   <div>
+       <p style="text-align: center; margin-top: 70px;">Tom Ford August Green Rectangular Men's<br> Sunglasses FT0678 52N 58 FT0678 52N 58<br>
+           <b>US $186.99</b></p> 
+   
+   </div>
+   
+   <div style="text-align: center;">
+       <h2 style="margin-top:60px">Shop all 2,745</h2>
+       <p>Men's Shoes</p>
+       <h2> > </h2>
+   </div>
+   </div>
+
+
+
+
+    <!-- last footer part -->
+    <footer class="mt-5 text-sm pt-3 text-center">
+        <p>
+          Copyright © 1995-2025 eBay Inc. All Rights Reserved.
+          <a href="#" class="text-blue-500">Accessibility</a>,
+          <a href="#" class="text-blue-500">User Agreement</a>,
+          <a href="#" class="text-blue-500">Privacy</a>,
+          <a href="#" class="text-blue-500">Payments Terms of Use</a>,
+          <a href="#" class="text-blue-500">Cookies</a>,
+          <a href="#" class="text-blue-500">CA Privacy Notice</a>,
+          <a href="#" class="text-blue-500">Your Privacy Choices</a>, and
+          <a href="#" class="text-blue-500">AdChoice</a>.
+        </p>
+      </footer>
+
+
+
+</body>
+</html>
+
+<script src="../js/ebaysDailyDeals2.js" type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+    import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+    import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-database.js";
+  
+    const firebaseConfig = {
+        apiKey: "AIzaSyA-8DveOlIlHvyK813rJbm4q-xTpdtb9n0",
+        authDomain: "users-database-e953e.firebaseapp.com",
+        databaseURL: "https://users-database-e953e-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "users-database-e953e",
+        storageBucket: "users-database-e953e.firebasestorage.app",
+        messagingSenderId: "622398829390",
+        appId: "1:622398829390:web:930571c5fb5aa985a3641f",
+    };
+  
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+    const authLinksDiv = document.getElementById("auth-links");
+  
+    const checkLoginState = () => {
+        const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true'; // Check if user is logged in
+        if (isLoggedIn) {
+            const userName = localStorage.getItem('userName');
+            authLinksDiv.innerHTML = `
+                Hi, ${userName}
+                <a href="#" class="logout">Logout</a>
+            `;
+        } else {
+            authLinksDiv.innerHTML = `
+                Hi! <a href="login.html">Sign in</a> or 
+                <a href="signup.html">register</a>
+            `;
+        }
+    };
+  
+    window.onload = checkLoginState;
+  
+    auth.onAuthStateChanged((user) => {
+        if (user) {
+            const userRef = ref(getDatabase(), "users/" + user.uid);
+            get(userRef).then((snapshot) => {
+                if (snapshot.exists()) {
+                    const userData = snapshot.val();
+                    const userFirstName = userData.personal_Firstname; 
+                    localStorage.setItem('isLoggedIn', 'true');
+                    localStorage.setItem('userName', userFirstName);
+                }
+            });
+        } else {
+            localStorage.setItem('isLoggedIn', 'false');
+            localStorage.removeItem('userName');
+        }
+        checkLoginState();
+    });
+  
+    const logoutUser = () => {
+        signOut(auth)
+            .then(() => {
+                localStorage.setItem('isLoggedIn', 'false');
+                localStorage.removeItem('userName');
+                window.location.href = "login.html"; // Redirect to login
+            })
+            .catch((error) => {
+                console.error("Error logging out:", error);
+            });
+    };
+  
+    document.body.addEventListener("click", (event) => {
+        if (event.target && event.target.classList.contains("logout")) {
+            logoutUser();
+        }
+    });
+  </script>
